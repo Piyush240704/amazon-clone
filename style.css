@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/*logo*/
+.nav-logo{
+    height: 50px;
+    width: 100px; 
+}
+.logo{
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    animation: moving 2s infinite linear  ;
+}
+@keyframes moving{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+    border-radius: 5px;
+}
+ /* box2*/
+.add-first{
+    color: #cccccc;
+    font-size: 0.85rem;  /*rem- auto size adjust acc to width*/
+    margin-left: 15px;
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex; /*to set in one line */
+    align-items: center;
+    margin-left: 1px;
+}
+ /* box 3 */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;/*to space evenly*/
+    /* align-items: center; */
+    /* background-color: darkorange; */
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px; 
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius:4px;
+    border-bottom-left-radius:4px;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0f1111;
+    background-color: darkorange;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+
+}
+.search-icon i:hover{
+    font-size: 20px;
+    color: antiquewhite;
+  }
+  
+.search-lang{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: end;
+    background-color:#0f1111;
+    width: 90px;
+    height: 40px;
+}
+.choose-lang{
+   background-color: #0f1111;
+   color: white;  
+   border: none;
+   font-size: 1.2rem;
+}
+.add-acc{
+    display: flex;
+}
+.choose-acc{
+    background-color: #0f1111;
+    color: #cccccc;
+    border: none;
+}
+.text1{
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+.text2{
+    font-size: 1rem;
+}
+.fa-regular{
+   font-size: 0.85rem;
+   margin-top: 1.5px;
+   margin-right: 2px;
+   color:burlywood;
+   animation: icon 0.8s ease-in-out 0s infinite normal ;
+   animation-fill-mode: none;
+}
+@keyframes icon {
+    from {
+        color: burlywood;
+    }
+    to {
+        color: #0f1111;
+    }
+}
+.text3{
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+.text4{
+    font-size: 1rem;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+/* pannel */
+.pannel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.pannel-ops p{
+    display: inline;
+    margin-left: 15px;
+}
+.pannel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+.pannel-deals{
+    font-size: 0.95;
+    font-weight: 700;
+}
+.pannel-all{
+    font-weight: 700;
+}
+.pannel-all i{
+    font-size: 20px;
+}
+/* hero section */
+.hero-section{
+    background-image: url(new.jpeg);
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    animation: hero 3s ease-in-out  infinite ;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-iteration-count: calc(infinite);
+  
+}
+@keyframes hero{
+    0%{background-image: url(new.jpeg);}
+   
+    50%{background-image: url(beauty.jpeg);}
+  
+    100%{background-image: url(game.jpeg);}
+}
+
+.hero-msg{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 75%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    animation:move 1s infinite  ease-in-out;
+    animation-direction: alternate-reverse;
+}
+@keyframes move{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+.hero-msg:hover{
+    background-color:black;
+    color: white;
+}
+.hero-msg a{
+    color: #007185;
+    text-decoration: none;
+}
+.hero-msg a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+/* shop sec */
+.shop-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:rgba(0, 113, 113,0.4);
+    border-top: 1px solid black;
+}
+.box{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.box-img1{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img1 3s ease-in-out calc(1) ;
+    animation-delay: 1s;
+}
+@keyframes img1{
+    from{background-image: url(box2_image.jpg);}
+    to{background-image: url("https://img.freepik.com/premium-photo/skin-care-products-healthcare-procedures-concept-hygiene-cosmetic-healthy-lifestyle-spa_266732-20971.jpg");}
+}
+.box-img1:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-img2{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img2 3s ease-in-out calc(1) ;
+    animation-delay: 6s;
+}
+@keyframes img2{
+    from{background-image: url(box1_image.jpg);}
+    to{background-image: url("https://img.freepik.com/free-photo/cute-woman-bright-hat-purple-blouse-is-leaning-stand-with-dresses-posing-with-package-isolated-background_197531-17610.jpg");}
+}
+.box-img2:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-img3{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img3 3s ease-in-out calc(1);
+    animation-delay: 12s;
+}
+@keyframes img3{
+    from{background-image: url(box3_image.jpg);}
+    to{background-image: url("https://st4.depositphotos.com/1023934/37752/i/450/depositphotos_377527168-stock-photo-interior-design-modern-living-room.jpg");}
+}
+.box-img3:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-img4{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img4 3s ease-in-out calc(1) ;
+    animation-delay: 18s;
+}
+@keyframes img4{
+    from{background-image: url(box4_image.jpg);}
+    to{background-image: url("https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FkZ2V0c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");}
+}
+.box-img4:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-img5{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img5 3s ease-in-out calc(1) ;
+    animation-delay: 24s;
+}
+@keyframes img5{
+    from{background-image: url(box5_image.jpg);}
+    to{background-image: url("https://media.allure.com/photos/64cbe5cd825d487ade17681a/1:1/w_1600%2Cc_limit/Gallery_Note.png");}
+}
+.box-img5:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-img6{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img6 3s ease-in-out calc(1) ;
+    animation-delay: 30s;
+}
+@keyframes img6{
+    from{background-image: url(box6_image.jpg);}
+    to{background-image: url("https://manchanda.digitalerp.biz/images/506683Pet%20Conditioner.jpg");}
+}
+.box-img6:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-img7{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img7 3s ease-in-out calc(1) ;
+    animation-delay: 36s;
+}
+@keyframes img7{
+    from{background-image: url(box7_image.jpg);}
+    to{background-image: url("https://www.shutterstock.com/shutterstock/photos/79075390/display_1500/stock-photo-back-to-school-supplies-isolated-79075390.jpg");}
+}
+.box-img7:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-img8{
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    animation: img8 3s ease-in-out calc(1) ;
+    animation-delay: 42s;
+}
+@keyframes img8{
+    from{background-image: url(box8_image.jpg);}
+    to{background-image: url("data:image/jpeg;base64,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");}
+}
+.box-img8:hover{
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content a{
+    color:#007185;
+}
+.box-content a:hover{
+    color:brown;
+    text-decoration: underline;
+}
+.box-content h2{
+   text-transform:capitalize;
+   text-shadow: 0.5px 0.5px 5px orange;  
+}
+.books{
+    height: 300px;
+    width: 97%;
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+}
+.book-img{
+    height: 230px;
+    width: 160px;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.book-text{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+
+.sign-in{
+    height: 200px;
+    width: 100%;
+    background-color:rgba(0, 113, 113,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.in{
+    background-color: white;
+    height: 100px;
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+}
+.sign-txt{
+    display: grid;
+    justify-content: center;
+    align-items:center ;
+    margin-top: 15px;
+}
+.sign{
+    background-color:rgb(246,190,0);
+    display: grid;
+    justify-content: center;
+    align-items:center ;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+   
+}
+.sign:hover{
+    border: 1px solid black;
+}
+.click a{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+button{
+    background-color:rgb(246,190,0); 
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    width: 210px;
+    transition: all 0.2s ease;
+    cursor:progress;
+
+}
+button:active{
+    transform: scale(0.3);
+}
+
+
+    
+
+
+
+  /* footer */
+footer{
+    margin-top: 3px;
+}
+
+.footpannel-1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 0.85rem;
+   font-weight: 700;
+  }
+.footpannel-2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    color: #dddddd;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+ul a:hover{
+    text-decoration: underline;
+}
+ul p{
+    font-weight: 1000;
+}
+.footpannel-3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+.footpannel-4{
+    background-color: #0f1111;
+    color: white ;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    height: 60px;
+}
+.pages{
+    padding-top: 15px;
+}
+.pages a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    margin-top: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+

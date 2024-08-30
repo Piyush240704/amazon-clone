@@ -1,0 +1,90 @@
+body{
+    background-image: url(s5.jpeg);
+    background-size: cover;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    animation: name 6s ease-in-out 2s calc(1) ;
+    
+   
+} 
+@keyframes name{
+    from{background-image: url(s5.jpeg);}
+    to{background-image: url(sign.jpeg); }
+}
+.box{
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    left: 550px;
+    top: 150px;
+    background-color:transparent;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.logo{
+    background-image: url(amazon_logo.png);
+    background-size: cover;
+    height: 80px;
+    width: 100%;
+}
+.nav-logo{
+    height: 100px;
+    width: 200px; 
+    position: absolute;
+    left: 652px;
+    top: 20px;
+    background-color: black;
+    border-radius: 25px;
+   
+}
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.search-input{
+    background-color: transparent;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 25px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search-input:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+h1{
+    color: black;
+    animation: h 6s ease-in-out 2s calc(1) ;
+}
+@keyframes h {
+    from{ color: black; }
+    to{color: white;}
+}
+p{
+    color: black;
+    animation: h 6s ease-in-out 2s calc(1) ;
+}
+button{
+    background-color: black;
+    color: orange;
+    border: none;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 110px;
+    font-weight: 900;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.2s ease;
+}
+button:active{
+    transform: scale(0.3);
+}
+button:hover{
+    border: 1px solid white;
+    box-shadow: 0 0 5px wheat, 0 0 25px wheat , 0 0 50px wheat , 0 0 100px wheat , 0 0 200px wheat;
+}
+
